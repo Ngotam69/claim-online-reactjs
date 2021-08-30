@@ -1,17 +1,5 @@
 import * as types from '../constants/ActionType';
 
-let initialState = {};
-
-const ClaimState = (state = initialState, action) => {
-    switch (action.type) {
-        case types.SEARCH_POLICY:
-            state = action.ClaimState;
-            return state;
-        default:
-            return state;
-    }
-}
-export default ClaimState;
 
 // const initialState = {
 //     txtSothe: '0123456',
@@ -42,3 +30,17 @@ export default ClaimState;
 //         }
 //     ]
 // };
+
+let initialState = {};
+
+const ClaimState = (state = initialState, action) => {
+    switch (action.type) {
+        case types.SEARCH_POLICY:
+            state = action.ClaimState;
+            return state;
+        default:
+            return state;
+    }
+}
+export default ClaimState;
+

@@ -13,13 +13,14 @@ function mapDispatchToProps(dispatch, props) {
     return {
         searchDataPolicyDone: () => {
             dispatch(searchDataPolicyRequest());
-        },
-        logout: () => {
-            dispatch(logout());
-        },
-        login: () => {
-            dispatch(login());
         }
+        // ,
+        // logout: () => {
+        //     dispatch(logout());
+        // },
+        // login: () => {
+        //     dispatch(login());
+        // }
     };
 }
 
